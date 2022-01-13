@@ -12,4 +12,10 @@ Open the terminal on VSCode studio, and `ssh` into your own `ieng6` accoount wit
 After that, we try running some commands on the terminal. Below are the list of commands we have ran and some of the outputs
 - `cd` : change directory 
 - `ls -lat` listing all files in the current directory
-![image] 
+![image](Scrnshot1.png)
+- `cat /home/linux/ieng6/cs15lwi22/public/hello.txt` 
+![image](SS2.png) 
+
+## Moving Files with scp
+Next we run WhereAmI.java on the local computer. Here's the result on the local computer
+
