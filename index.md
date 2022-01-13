@@ -19,4 +19,4 @@
 ---
 
 [Example](https://example.com)
-[Iceland](https://www.azamara.com/sites/default/files/heros/reykjavik-iceland-1800x1000.jpg)
+![Iceland](https://www.azamara.com/sites/default/files/heros/reykjavik-iceland-1800x1000.jpg)
