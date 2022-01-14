@@ -18,4 +18,20 @@ After that, we try running some commands on the terminal. Below are the list of 
 
 ## Moving Files with scp
 Next we run WhereAmI.java on the local computer. Here's the result on the local computer
+![image](SS_01.png)
+We now try to use tyhe `sch` command and move the files to the ieng computer.
+`scp WhereAmI.java cs15lwi22afk@ieng6.ucsd.edu:~/`
+The file is now copied to `ieng6` computers and when we list the files in the directory, we can see `WhereAmI.java`. We can also run it too as seen below. Notice the different output of the file path. 
+![image](SS_02.png)
+![image](SS_03.png)
+<br>
+
+## SSH Keys
+For this task I generated a ssh key and I was able to ssh into `ieng6` without the need to log in. I first created an RSA key, and then by following the commands on the lab report I was ultimately able to ssh in to the server without a password.
+![image](SS_04.png)
+<br>
+
+## Optimizing Remote Running
+Now that I have created a key to ssh to the server without a password. I can quickly copy files to the `ieng6` with just one command. And as you can see, I can copy `WhereAmI.java` to the server easily<br>
+<br>![image](SS_05.png)
 
