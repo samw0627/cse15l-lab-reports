@@ -24,7 +24,7 @@ The main bug is that the program failed to recognise that the brackets surroundi
 ### (a) Symptom
 [Here](https://github.com/samw0627/markdown-parse-revisited/blob/974bfe799475872fc8f3fbe259e67e7f659741b4/no-link.md) is the link to the failure inducing input that prompted us to make the change.
 
-When we tried to read from a program that has an image and a link, this was the original output.
+When we tried to read from a program that has no link inside of the brackets, this was the original output.
 
 `[this is random text]` 
 
@@ -40,6 +40,23 @@ The main bug is that the program failed to recognise that a link has no space, h
 ### (c)Fix
 ![fix](v2.png)
 We added a condition to check if there is spcae inside of brackets, as links usually don't have space.
+
+
+## Fix 3: Testing the bracket-file.md file
+### (a) Symptom
+[Here](https://github.com/samw0627/markdown-parse-revisited/blob/974bfe799475872fc8f3fbe259e67e7f659741b4/bracket-file.md) is the link to the failure inducing input that prompted us to make the change.
+
+When we tried to read from a program that has an image and a link, the original output was an infinite loop. 
+
+whereas the expected output should be
+
+`[]`
+
+### (b)What's The Problem?
+The main bug is that the program failed account for the case where there is no bracket in the file, hence the index never increment. Therefore, it will not be able to get out of the while loop. 
+
+### (c)Fix
+![fix](v2.png)
 
 
 
