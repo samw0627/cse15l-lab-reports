@@ -1,6 +1,6 @@
 # Lab Report 2 - Debugging 
 This lab report will detail the process of debugging the file MarkDownParse.java. The main goal of this program is to read and print only links in the markdown file.
-## Fix 1: Testing the imagelink file
+## Fix 1: Testing the imagelink.md file
 ### (a) Symptom
 [Here](https://github.com/samw0627/markdown-parse-revisited/blob/974bfe799475872fc8f3fbe259e67e7f659741b4/imagelink.md) is the link to the failure inducing input that prompted us to make the change.
 
@@ -20,7 +20,25 @@ The main bug is that the program failed to recognise that the brackets surroundi
 ### (c)Fix
 ![fix](v1.png)
 
+## Fix 2: Testing the nolink.md file
+### (a) Symptom
+[Here](https://github.com/samw0627/markdown-parse-revisited/blob/974bfe799475872fc8f3fbe259e67e7f659741b4/no-link.md) is the link to the failure inducing input that prompted us to make the change.
 
+When we tried to read from a program that has an image and a link, this was the original output.
+
+`[this is random text]` 
+
+whereas the expected output should be
+
+`[]`
+
+The program printed out the string inside of the brackets.
+
+### (b)What's The Problem?
+The main bug is that the program failed to recognise that a link has no space, hence it will print whatever is inside of the brackets, even if the string inside of the brackets is not a link, the program will still print out the link, leading to the symptom `[this is random text]` .
+
+### (c)Fix
+![fix](v1.png)
 
 
 
