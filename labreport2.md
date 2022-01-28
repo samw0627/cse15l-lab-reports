@@ -38,7 +38,8 @@ The program printed out the string inside of the brackets.
 The main bug is that the program failed to recognise that a link has no space, hence it will print whatever is inside of the brackets, even if the string inside of the brackets is not a link, the program will still print out the link, leading to the symptom `[this is random text]` .
 
 ### (c)Fix
-![fix](v1.png)
+![fix](v2.png)
+We added a condition to check if there is spcae inside of brackets, as links usually don't have space.
 
 
 
