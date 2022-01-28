@@ -18,6 +18,7 @@ The program printed out image file name as well as the links of the webpages.
 The main bug is that the program failed to recognise that the brackets surrounding the image file is not a link. Therefore, when the program detects Square Brackets and Open Brackets on the same line, in this case `![image](someimage.png` , it printed out the image file name as well as the links of the webpage.
 
 ### (c)Fix
+![fix](v1.png)
 
 
 
