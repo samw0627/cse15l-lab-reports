@@ -56,7 +56,7 @@ whereas the expected output should be
 The main bug is that the program failed account for the case where there is no bracket in the file, hence the index never increment. Therefore, it will not be able to get out of the while loop. 
 
 ### (c)Fix
-![fix](v2.png)
+![fix](v3.png)
 
 
 
