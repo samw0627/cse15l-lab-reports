@@ -1,23 +1,2 @@
-# Heading 1
-## Heading 2
-### Heading 3
-
-*Italic*
-**bold**
-
->blockquote
-
-1. List 1
-2. List 2
-3. List 3
-
-- First
-- Second
-- Third
-- Fourth Change
-
-`code`
----
-
-[Example](https://example.com)
-![Iceland](https://www.azamara.com/sites/default/files/heros/reykjavik-iceland-1800x1000.jpg)
+# Welcome to My Lab Report Page. Below are the links to my lab report!
+[Lab Report 1](https://github.com/samw0627/cse15l-lab-reports/blob/5ccee8662f3528e35e888ba74301e67f152aef27/lab-report-1-week-2.md)
