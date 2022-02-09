@@ -14,5 +14,5 @@ Next I log into ieng6 and tried to compile MarkdownparseTest using the commands<
 ![image](scnr4.png)<br>
 ## Step3: Doing it all in one command
 Finally, I tried completing all the above task by only using one command, which is the combaination of the above three commands.<br>
-`scp -r . cs15lwi22afk@ieng6.ucsd.edu:~/markdownparse2; ssh ieng6 'cd markdownparse2; javac -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar MarkdownParseTest.java; java -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar org.junit.runner.JUnitCore MarkdownParseTest'`
+`scp -r *.java *.md lib/ ieng6:markdownparse2; ssh ieng6 'cd markdownparse2; /software/CSE/oracle-java-se-14/jdk-14.0.2/bin/javac -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar MarkdownParseTest.java; /software/CSE/oracle-java-se-14/jdk-14.0.2/bin/java -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar org.junit.runner.JUnitCore MarkdownParseTest'`
 ![image](scnr6.png)
