@@ -75,21 +75,27 @@ Here is the [link](https://github.com/samw0627/markdown-parse-revisited) to my r
  I think making it so that this case would work requires major change to the code. This is because there are a lot of combination of nested parentheses and the best way to check whether open paren equals to close paren is to use a stack.
  
  ## Snippet 3 - Newlines in brackets and parentheses
+ 
  ### JUnit Test for My Implementation
+ 
     @Test
     public void getLinksnew3() throws IOException{
         Path fileName = Path.of("new3.md");
         String contents = Files.readString(fileName);
         assertEquals(List.of("https://ucsd-cse15l-w22.github.io/"), MarkdownParse.getLinks(contents));
     }
+    
  ### JUnit Test for the Reviewed Implementation
+ 
      @Test
      public void getLinksnew3() throws IOException{
         String fileContents = Files.readString(Path.of("new3.md"));
         ArrayList<String> testOutput = MarkdownParse.getLinks(fileContents.split("\n"));
         assertEquals("Check first element in array", "https://ucsd-cse15l-w22.github.io/", testOutput.get(0));
         }
+        
  ### JUnit Output for My Implementation
+ 
      3) getLinksnew3(MarkdownParseTest)
      java.lang.AssertionError: expected:<[https://ucsd-cse15l-w22.github.io/]> but was:<[]>
         at org.junit.Assert.fail(Assert.java:89)
@@ -99,6 +105,7 @@ Here is the [link](https://github.com/samw0627/markdown-parse-revisited) to my r
         at MarkdownParseTest.getLinksnew3(MarkdownParseTest.java:56)
         
  ### JUnit Output for Reviewed Implementation
+ 
      3) getLinksnew3(MarkdownParseTest)
         java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
         at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
@@ -107,6 +114,7 @@ Here is the [link](https://github.com/samw0627/markdown-parse-revisited) to my r
         at java.base/java.util.Objects.checkIndex(Objects.java:373)
         at java.base/java.util.ArrayList.get(ArrayList.java:426)
         at MarkdownParseTest.getLinksnew3(MarkdownParseTest.java:77)
+        
 I think I can add minor changes to the code. I can use the trim function that removes all front and tailing space before performing the parsing operation.
 
 
