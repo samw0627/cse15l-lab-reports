@@ -74,7 +74,7 @@ Here is the [link](https://github.com/samw0627/markdown-parse-revisited) to my r
         at MarkdownParseTest.getLinksnew2(MarkdownParseTest.java:66)
  I think making it so that this case would work requires major change to the code. This is because there are a lot of combination of nested parentheses and the best way to check whether open paren equals to close paren is to use a stack.
  
- ## Snippet 3 - Newlines in brackets and parentheses
+## Snippet 3 - Newlines in brackets and parentheses
  
  ### JUnit Test for My Implementation
  
