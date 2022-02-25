@@ -1,4 +1,4 @@
-# Lab Report 3: Testing MarkdownParse
+# Lab Report 4: Testing MarkdownParse
 This lab report will detail the process of testing my implementation of MarkdownParse and another implementation of MarkdownParse that I have reviewed on 3 novel implementation.
 Here is the [link](https://github.com/samw0627/markdown-parse-revisited) to my repository and here is the [link](https://github.com/w2llS/markdown-parse) to the repository I have reviewed.
 ## Snippet 1 - with backticks
