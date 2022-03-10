@@ -30,7 +30,7 @@ This output corresponds to file 194.md, the content is shown below.
 In this case, Joe's implementation is correct and my implementation is wrong.
 
 
-## Comparison two: Line 1065 (file 577.md)
+## Comparison two: Line 1065 (577.md)
 The Comparison of the output os shown below,
 ```
 1065c1062
