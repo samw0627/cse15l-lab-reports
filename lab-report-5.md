@@ -45,7 +45,7 @@ This output corresponds to file 577.md.
 In this case, my implementation is correct and Joe's implementation is wrong.
 
 ## Change in Implementation
-For Error 1, the bug comes from the fact that open paren doesn't come right after the square brackets. Based on my implementation, it does not reach the `toReturn.add` statement if the open paren doesn't come right after the square brackets, hence the program failed to detech the code. This is the code block that need to be changed in order to fix this.
+For Error 1, the bug comes from the fact that open paren doesn't come right after the square brackets. Based on my implementation, it does not reach the `toReturn.add` statement if the open paren doesn't come right after the square brackets, hence the program failed to detect the code. This is the code block that need to be changed in order to fix this.
 ```
 if(nextCloseBracket +1 == openParen && openParen + 1 != closeParen){
 toReturn.add(markdown.sybstring(openParen + 1, closeParen));
