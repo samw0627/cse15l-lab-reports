@@ -21,9 +21,33 @@ The Comparison of the output is shown below.
 ---
 > [url] //Joe's Implementation
 ```
-This out put corresponds to file 194.md, the content is shown below.
+This output corresponds to file 194.md, the content is shown below.
 ```
+[Foo*bar\]]:my_(url) 'title (with parens)'
 
+[Foo*bar\]]
+```
+In this case, Joe's implementation is correct and my implementation is wrong.
 
 
 ## Comparison two: Line 1065 (file 577.md)
+The Comparison of the output os shown below,
+```
+1065c1062
+< [] //My Implementation
+---
+> [train.jpg] //Joe's Implementation
+```
+This output corresponds to file 577.md.
+```
+![foo](train.jpg)
+```
+In this case, my implementation is correct and Joe's implementation is wrong.
+
+## Change in Implementation
+For Error 1, the bug comes from the fact that open paren doesn't come right after the square brackets. Based on my implementation, it does not reach the `toReturn.add` statement if the open paren doesn't come right after the square brackets, hence the program failed to detech the code. This is the code block that need to be changed in order to fix this.
+```
+if(nextCloseBracket +1 == openParen && openParen + 1 != closeParen){
+toReturn.add(markdown.sybstring(openParen + 1, closeParen));
+```
+
