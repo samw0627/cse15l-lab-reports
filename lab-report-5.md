@@ -50,4 +50,9 @@ For Error 1, the bug comes from the fact that open paren doesn't come right afte
 if(nextCloseBracket +1 == openParen && openParen + 1 != closeParen){
 toReturn.add(markdown.sybstring(openParen + 1, closeParen));
 ```
-
+For Error 2, the bug comes from the fact that Joe's program did not check for `!` at the front of the line, and printed anything when the program detects the square bracket. The code can be fixed by adding a statement to check if `!` exists at the beginning of the line, the program should output empty brackets. These are the code that needs to be changed 
+```
+  if(nextOpenBracket == -1 || nextCloseBracket == -1 || closeParen == -1 || openParen == -1) {
+      return toReturn;
+   }
+ ```
